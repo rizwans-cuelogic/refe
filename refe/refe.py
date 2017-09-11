@@ -40,8 +40,8 @@ class ReferXBlock(StudioEditableXBlockMixin,XBlock):
     reference_status = List(list_style='set',values=['Available','Not Available'],display_name="Reference Link",Scope=Scope.content)
     reference_type = List(list_style='set',values=['Document','Image','Link','Video'],display_name="Reference Link",Scope=Scope.content)
 
-    editable_fields = ('reference_name', 'reference_type','reference_description',
-                        'reference_link','reference_status')
+    editable_fields = ('reference_name','reference_description',
+                        'reference_link','reference_status','reference_type')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
