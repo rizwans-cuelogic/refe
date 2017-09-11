@@ -35,10 +35,10 @@ class ReferXBlock(StudioEditableXBlockMixin,XBlock):
         help="A simple counter, to show something happening",
     )
     reference_name = String(display_name = "Reference Name",default=None,Scope=Scope.content)
-    reference_type = List(list_style='set', list_values_provider=type_list(),display_name="Reference Link",Scope=Scope.content)
+    reference_type = List(list_style='set',values=['Document','Image','Link','Video'],display_name="Reference Link",Scope=Scope.content)
     reference_link = String(display_name = "Reference Link",default=None,Scope=Scope.content)
     reference_description = String(display_name = "Reference Description",multiline_editor=True,default=None,Scope=Scope.content)
-    reference_status = List(list_style='set', list_values_provider=status_list(),display_name="Reference Link",Scope=Scope.content)
+    reference_status = List(list_style='set',values=['Document','Image','Link','Video'],display_name="Reference Link",Scope=Scope.content)
 
     editable_fields = ('reference_name', 'reference_type','reference_description',
                         'reference_link','reference_status')
