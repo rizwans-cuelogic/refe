@@ -36,7 +36,7 @@ class ReferXBlock(StudioEditableXBlockMixin,XBlock):
     )
     reference_name = String(display_name = "Reference Name",default=None,Scope=Scope.content)
     reference_link = String(display_name = "Reference Link",default=None,Scope=Scope.content)
-    reference_description = String(display_name = "Reference Description",multiline_editor=True,default=None,Scope=Scope.content)
+    reference_description = String(display_name = "Reference Description",multiline_editor='html',default=None,Scope=Scope.content)
     reference_status = List(display_name="Reference Status",list_style='set',values=['Available','Not Available'],Scope=Scope.content)
     reference_type = List(display_name="Reference Type",list_style='set',values=['Document','Image','Link','Video'],Scope=Scope.content)
 
