@@ -1,0 +1,24 @@
+b {
+    font-family: monospace;
+    color: #000000;
+}
+h1.margin-left {
+    font-family: inherit;
+}
+
+ol{
+	list-style:none;
+}
+p{
+	color: #000000;
+	font-size:15px;
+	font-family: Arial, sans-serif;
+	letter-spacing: normal;
+	text-transform: initial;
+}
+ol.or-list{
+	padding-left:0px;
+}
+section.content {
+	padding:0px;
+}

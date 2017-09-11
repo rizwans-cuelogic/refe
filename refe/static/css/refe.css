@@ -1,0 +1,9 @@
+/* CSS for ReferXBlock */
+
+.refe_block .count {
+    font-weight: bold;
+}
+
+.refe_block p {
+    cursor: pointer;
+}
